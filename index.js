@@ -29,14 +29,17 @@ app.use('/datas' ,totaldatas);
 
 
 
-app.get('/', (req, res) => {
+app.get('/m', (req, res) => {
     res.redirect('/datas/mentors');
   });
 
+app.get('/s', (req, res) => {
+    res.redirect('/datas/mentors');
+  });
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  console.log(`Server listening on port http://localhost:${port}`);
 });
 
 
