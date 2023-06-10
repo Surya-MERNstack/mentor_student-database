@@ -28,6 +28,12 @@ app.use('/datas' ,totaldatas);
 
 
 
+
+app.get('/', (req, res) => {
+    res.redirect('/datas/mentors');
+  });
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
