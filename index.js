@@ -26,6 +26,8 @@ try {
 const totaldatas = require('./router/routers');
 app.use('/datas' ,totaldatas);
 
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

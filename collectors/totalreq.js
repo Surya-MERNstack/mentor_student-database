@@ -6,7 +6,7 @@ const TotalMentors = async (req, res) => {
   const newmentors = new mentor({
     name: req.body.name,
     subject: req.body.subject,
-    student_id: req.body.student_id,
+    student_id: req.body.student_id, 
   }); 
 
   try {
@@ -49,7 +49,13 @@ const gettingMentors = async (req ,res) => {
     }
 }
 
+const totaljoinData = [getingStudent,gettingMentors];
+
+
+
 module.exports.TotalMentors = TotalMentors;
 module.exports.TotalStudents = TotalStudents;
 module.exports.getingStudent = getingStudent;
 module.exports.gettingMentors = gettingMentors; 
+
+module.exports.totaljoinData = totaljoinData

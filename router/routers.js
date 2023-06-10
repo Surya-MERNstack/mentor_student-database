@@ -8,4 +8,5 @@ router.post('/mentors' ,collectionsData.TotalMentors);
 router.post('/student',collectionsData.TotalStudents);
 router.get('/student', collectionsData.getingStudent);
 router.get('/mentors',collectionsData.gettingMentors);
+router.get('/' ,collectionsData.totaljoinData);
 module.exports = router;
