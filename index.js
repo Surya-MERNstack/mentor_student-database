@@ -24,18 +24,12 @@ try {
 }
 
 const totaldatas = require('./router/routers');
-app.use('/datas' ,totaldatas);
+app.use('/' ,totaldatas);
+
+app.use('/mentors',totaldatas)
+app.use('/student',totaldatas)
 
 
-
-
-app.get('/m', (req, res) => {
-    res.redirect('/datas/mentors');
-  });
-
-app.get('/s', (req, res) => {
-    res.redirect('/datas/mentors');
-  });
 
 // Start the server
 app.listen(port, () => {
