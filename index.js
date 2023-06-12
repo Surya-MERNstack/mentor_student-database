@@ -1,7 +1,6 @@
-
-
 const express = require('express');
 const mongoose = require('mongoose');
+
 require('dotenv').config().parsed;
 
 const dbUrl = process.env.DB_URL;
