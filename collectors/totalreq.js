@@ -14,7 +14,7 @@ const TotalMentors = async (req, res) => {
     res.status(200).json(newmentors);
   } catch (err) { 
     res.status(400).json({ message: "Error".err });
-  }
+  } 
 };
 
 const TotalStudents = async (req, res) => {
