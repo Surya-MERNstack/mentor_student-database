@@ -4,7 +4,7 @@ const student = require("../models/student");
 
 const TotalMentors = async (req, res) => {
   const newmentors = new mentor({
-    name: req.body.name,
+    name: req.body.name,    
     subject: req.body.subject,
     student_id: req.body.student_id, 
   }); 
