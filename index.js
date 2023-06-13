@@ -7,7 +7,7 @@ require('dotenv').config().parsed;
 const dbUrl = process.env.DB_URL;
 const port = process.env.PORT;
 
-mongoose.connect(dbUrl, { useNewUrlParser: true})
+mongoose.connect(dbUrl, { useNewUrlParser: true })
   .then(() => {
     console.log('MongoDB connected');
     // Start the server after successful connection
