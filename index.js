@@ -2,8 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 require('dotenv').config().parsed;
-const customEnv = require('custom-env');
-customEnv.env(true);
+
 
 const dbUrl = process.env.DB_URL;
 const port = process.env.PORT;
